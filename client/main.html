@@ -1,0 +1,23 @@
+<head>
+  <title>simple</title>
+</head>
+
+<body>
+  <h1>Welcome to The World Wishing Well!</h1>
+
+  {{> wishesform}}
+
+</body>
+
+<template name="wishesform">
+<input type = "text" Class = "wish">
+  <button class="wishsubmit">Submit</button>
+
+  {{#each wishes}}
+    {{text}} 
+  {{/each}}
+
+</template>
+
+
+
